@@ -2,8 +2,10 @@
 # -*- coding: utf-8 -*-
 
 import os, re
+from collections import defaultdict
+from pprint import pprint
 
-findhours = re.compile(r'(\d{1,2}(:\d\d)?)-(\d{1,2}(:\d\d)?(([AP]M)|NOON))')
+findhours = re.compile(r'(\d{1,2}(:\d\d)?)-((\d{1,2}(:\d\d)?)(([AP]M)|NOON))')
 starts = []
 ends = []
 
@@ -12,7 +14,6 @@ def parsefile(f):
     for line in f:
         if line.find("<pre>") > -1:
             save = True
-            lines = []
         if (save == True):
             m = findhours.search(line)
             if m:
@@ -22,12 +23,15 @@ def parsefile(f):
                 starts.append(start)
                 ends.append(end)
                 print start,end
-            #lines.append(line)
         if line.find("</pre>") > -1:
             save = False
-            #return lines
 
 for filename in os.listdir("pennregistrar/"):
     f = open("pennregistrar/"+filename, "r")
-    #f = open("pennregistrar/aamw.html", "r")
     parsefile(f)
+
+timeslots = defaultdict(int)
+for i in range(len(starts)):
+    timeslots[starts[i]+"-"+ends[i]] += 1
+
+pprint(sorted(timeslots.items(), key=lambda x:x[1], reverse=True))
