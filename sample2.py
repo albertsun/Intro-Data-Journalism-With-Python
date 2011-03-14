@@ -1,4 +1,4 @@
 myfile = open("pennregistrar/aamw.html")
 filecontents = myfile.read()
-print filecont
+print filecontents
 myfile.close()

@@ -1,4 +1,4 @@
-myfile = open("pennregistrar/aamw.html")
+myfile = open("pennregistrar/afrc.html")
 
 count = 0
 for line in myfile:

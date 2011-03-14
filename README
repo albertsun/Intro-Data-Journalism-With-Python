@@ -1,3 +1,12 @@
 Code for the "Intro to Python Session" at CMA New York 2011
 
 Walkthrough of enough python to scrape a university regisrar website and find out which timeslots are most popular for classes.
+
+To learn more, try these resources
+
+http://python.org/about/gettingstarted/
+http://diveintopython.org/
+http://www.regular-expressions.info/
+http://www.propublica.org/nerds/item/doc-dollars-guides-collecting-the-data
+
+Penn course data from http://www.upenn.edu/registrar/timetable/ and downloaded using http://www.downthemall.net/

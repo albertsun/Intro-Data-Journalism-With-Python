@@ -6,15 +6,15 @@ AAMW-521  HSE/VILLA/PAL HELLEN ROM          1 CU
      CROSS LISTED: ARTH-521 CLST-521
      MAX W/CROSS LIST: 13"""
 
-findtime = re.compile(r'(\d{1,2}:\d\d)')
-matches = findtime.search(content)
-print matches.groups()
+# findtime = re.compile(r'(\d{1,2}:\d\d)')
+# matches = findtime.findall(content)
+# print matches
 
-# findinstructor = re.compile(r'([A-Z]+ [A-Z]\n)')
+# findinstructor = re.compile(r'(\w+ [A-Z]\n)')
 # matches = findinstructor.search(content)
 # print matches.groups()
 
 
-# findtimeranges = re.compile(r'(\d{1,2}(:\d\d)?)-((\d{1,2}(:\d\d)?)(([AP]M)|NOON))')
-# matches = findtimeranges.search(content)
-# print matches.groups()
+findtimeranges = re.compile(r'(\d{1,2}(:\d\d)?)-((\d{1,2}(:\d\d)?)(([AP]M)|NOON))')
+matches = findtimeranges.search(content)
+print matches.groups()
