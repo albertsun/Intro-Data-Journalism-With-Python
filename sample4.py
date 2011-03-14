@@ -1,6 +1,7 @@
 import re
 
-content = """AAMW-521  HSE/VILLA/PAL HELLEN ROM          1 CU
+content = """
+AAMW-521  HSE/VILLA/PAL HELLEN ROM          1 CU
  401 SEM W 3:30-6:30PM                 KUTTNER A
      CROSS LISTED: ARTH-521 CLST-521
      MAX W/CROSS LIST: 13"""
