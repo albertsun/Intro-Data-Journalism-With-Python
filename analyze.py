@@ -26,10 +26,12 @@ def parsefile(f):
         if line.find("</pre>") > -1:
             save = False
 
+# looping over every file in the directory
 for filename in os.listdir("pennregistrar/"):
     f = open("pennregistrar/"+filename, "r")
     parsefile(f)
 
+# dividing up the classes we've found into different timeslots to count them
 timeslots = defaultdict(int)
 for i in range(len(starts)):
     timeslots[starts[i]+"-"+ends[i]] += 1
