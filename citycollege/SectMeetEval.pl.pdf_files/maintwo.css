@@ -1,0 +1,530 @@
+@charset "UTF-8";
+
+
+hr {
+		  
+	background-color: #ccc;
+	line-height: 1px;
+	display: block;
+	height: 1px;
+	width: 100%;
+	border: 0;
+	margin: 0px 0px 10px 0px;
+}
+		  
+		  
+* {
+
+	margin: 0;
+	padding: 0;
+
+}
+
+body {
+	padding: 0;
+	border: 0;
+	background-color: #FFFFFF;
+	background-repeat: repeat;
+	background-position: top;
+	font-family:Arial, Helvetica, sans-serif;
+	
+}
+
+a {
+	color: #0066FF;
+	text-decoration: none;
+	
+
+
+}
+
+a.collegelist {
+
+
+	
+	margin: 0px 10px 0px 0px;
+	line-height: 120%;
+	font-size: 85%;
+
+
+}
+
+a:hover {
+
+	text-decoration:underline;
+
+}
+
+a:visited {
+
+	color: #0066FF;
+	text-decoration: none;
+
+}
+
+
+
+/*FONT STYLES */
+
+
+FONT {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000000;
+	font-size: 10pt;	
+
+
+}
+
+
+FONT.orange {
+	color: #FF9900;
+	font-size: 70%;
+	line-height: 170%;
+	text-align:right;
+	font-weight: bold;
+	padding: 0px 5px 0px 0px;
+}
+
+FONT.gray {
+	color: #666666;
+	font-size: 70%;
+	line-height: 170%;
+	text-align:right;
+}
+
+FONT.red {
+	color: #FF0000;
+	font-size: 70%;
+	line-height: 170%;
+	text-align:right;
+}
+
+FONT.lightgray {
+	color: #999999;
+	font-size: 90%;
+	line-height: 110%;
+	padding: 0px 0px 0px 0px;
+}
+
+span.graytitle {
+	color: #333333;
+	text-transform:uppercase;
+	font-size:70%;
+	letter-spacing: 1px;
+	font-weight:bold;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+span.collegetitle {
+
+	color: #333333;
+	text-transform:uppercase;
+	font-size:85%;
+	letter-spacing: 1px;
+	font-weight:bold;
+	font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+span.invisible {
+
+
+	color:#FFFFFF;
+
+}
+
+span.graybig {
+	color: #000000;
+	text-transform:uppercase;
+	font-size:85%;
+	letter-spacing: 1px;
+	font-weight:bold;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+span.open {
+	color:#009900;
+}
+
+span.closed {
+	color:#FF0000;
+}
+
+span.late {
+    color:#CC9900;
+}
+
+span.begin {
+	text-transform:uppercase;
+	font-size:65%;
+	color: #666666;
+	padding: 0px 0px 0px 0px;
+}
+
+span.bluetitle {
+	color: #0033CC;
+	text-transform:uppercase;
+	font-size:70%;
+	letter-spacing: 1px;
+	font-weight:bold;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+span.graytwo {
+
+	color: #666666;
+	font-size:75%;
+	letter-spacing: 1px;
+	font-weight:bold;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 0px 5px 0px 5px;
+}
+
+span.graythree {
+
+	color: #666666;
+	font-size:75%;
+	letter-spacing: 1px;
+	font-weight:bold;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 0px 15px 0px 5px;
+}
+
+span.grayfour {
+
+	color: #666666;
+	font-size:75%;
+	font-weight:bold;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 0px 5px 0px 5px;
+}
+
+span.grayfive {
+
+	color: #000000;
+	text-transform:uppercase;
+	font-size:80%;
+	letter-spacing: 1px;
+	font-weight:bold;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*DIV TAGS */
+
+.container {
+
+	width: 769px;
+	
+
+
+}		  
+
+
+.maintable {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	text-align:left;
+	width: 744px;
+	height: 161px;
+	background-color: #FFFFFF;						
+		 	  
+}
+
+.header {
+		  
+		  	margin: 20px 0px 0px 0px;
+			padding: 0px 0px 0px 0px;
+			width: 769px;
+			height: 55px;
+			background-color: #003399;
+			border: 0px;
+		  
+}
+
+.topcontent {
+		  
+		  	margin: 22px 0px 5px 25px;
+			padding: 0;
+		 
+		  
+}
+
+.maincontent {
+		  
+		  	margin: 0px 0px 0px 25px;
+			padding: 0;
+ 		  
+}
+		  
+#time {
+		  
+		  	margin: 0px 0px 0px 0px;
+			padding: 0px 0px 5px 0px;	  	
+			text-align:right;
+			
+		  
+}		  
+
+#collegelist {
+
+		width: 744px;
+		padding: 7px 0px 14px 0px;
+		margin: 0px 0px 10px 0px;
+		height:auto;
+		display:block;
+		
+		border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #999999;
+
+}
+
+
+#collegelist li a{
+
+	font-size: 80%;
+	padding: 0px 5px 0px 0px;
+		
+		
+
+}
+
+#collegelist ul {
+
+	
+	line-height: 80%;
+	
+	
+}
+
+#collegelist li {
+
+	display:inline;
+	margin: 0px 10px 0px 0px;
+	padding: 0px;
+	
+
+}
+
+
+#buttons {
+
+	padding: 10px 0px 15px 10px;
+	display: block;
+	height: 22px;
+
+
+}
+
+
+#footer {
+	background-image: url(../images/footer.jpg);
+	background-repeat: no-repeat;
+	display: block;
+	height: 23px;
+	width: 769px;
+	background-color: #003399;
+	padding: 0;
+	margin: 0;
+	background-position: right;
+		  
+		  
+}
+
+
+/*TABLE STYLES*/
+
+tr.graybar {
+	
+	background: #f1f1f1;
+	height: 40px;
+
+
+}
+
+tr.whitebar {
+	
+	height: 40px;
+
+}
+
+td.categories {
+	
+	padding: 5px 0px 5px 10px;
+	width: 190px;
+		  
+}
+
+td.rightalign {
+	text-align: right;
+	vertical-align: top;
+	color: #666666;
+	text-transform:uppercase;
+	font-size:80%;
+	letter-spacing: 1px;
+	font-weight:bold;
+	font-family: Arial, Helvetica, sans-serif;	
+	width: 105px;
+	padding: 0px 5px 0px 0px;
+
+
+}
+
+td.graybox {
+	text-align: center;
+	background-color:#999999;
+	height: 34px;
+	vertical-align:middle;
+	color: #333333;
+	text-transform:uppercase;
+	font-size:70%;
+	letter-spacing: 1px;
+	font-weight:bold;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+td.lightgraybox {
+	text-align: center;
+	background-color:#CCCCCC;
+	height: 34px;
+	vertical-align:middle;
+	color: #333333;
+	text-transform:uppercase;
+	font-size:70%;
+	letter-spacing: 1px;
+	font-weight:bold;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+td.scm {
+	background-color:#f1f1f1;
+}
+
+td.whitebox {
+
+	height: 24px;
+	color:#000000;
+	font-size: 85%;
+	text-align: center;
+	vertical-align:middle;
+	
+}
+
+/* was vertical-align:middle; instead of vertical-align:top, but */
+/* sections w/multiple meeting times look better when it is top. */
+td.bigwhitebox {
+	height: 40px;
+	color:#0066FF;
+	font-size: 85%;
+	text-align: center;
+	vertical-align:top;
+}
+
+.tabletop {
+
+	width: 100%;
+	padding: 0px 0px 0px 0px;
+	margin: 10px 0px 10px 0px;
+
+}
+
+.tabletwo {
+
+	width: 100%;
+	padding: 0px 0px 0px 0px;
+	margin: 10px 0px 10px 0px;
+
+}
+
+.coursetable {
+
+	width: 100%;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 15px 0px;
+
+}
+		  		
+/*DIV INNER STYLES */
+
+#buttons a {
+
+	text-decoration:none;
+	margin: 0;
+	padding: 0;
+	border: 0;
+
+}
+
+#buttons img{
+
+	float: left;
+	margin: 0;
+	padding: 0px 10px 0px 0px;
+	border: 0;
+
+
+
+}
+
+.header img{
+		  
+		  	border: 0;
+			margin: 0;
+			padding: 0;
+		  
+}
+		  
+		
+.topcontent img {
+		  
+		  	margin: 0px 0px 10px 0px;
+			padding: 0px 0px 0px 0px;
+		  
+		  
+}
+		  
+/*DROP BOXES AND STYLES */		  
+
+		  
+		  
+.inputboxsearch{
+	width: 320px;
+	font-size: 14px;
+	font-family:Arial, Helvetica, sans-serif;
+	color: #666666;
+	display:block;
+}
+
+OPTION {
+ 	margin: 2px 0px 2px 0px;
+	font-size: 14px;
+	font-family:Arial, Helvetica, sans-serif;
+	padding: 0;
+ }
+
+
+.smallinputbox{
+	width: 80px;
+	font-size: 12px;
+	font-family:Arial, Helvetica, sans-serif;
+	color: #666666;
+	display:block;
+	float: left;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 15px 0px 0px;
+}
+
+.smallinputbox OPTION {
+
+
+	margin: 2px 0px 2px 0px;
+	font-size: 12px;
+	font-family:Arial, Helvetica, sans-serif;
+	padding: 0;
+
+}
+
+
+
