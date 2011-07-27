@@ -9,7 +9,6 @@ starts = []
 ends = []
 
 def parsefile(f):
-    save = False
     for line in f:
         m = findhours.search(line)
         if m:
