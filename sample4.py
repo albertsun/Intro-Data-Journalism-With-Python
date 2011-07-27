@@ -1,20 +1,6 @@
-import re
+# list
+starts = ['3', '3:30', '2', '10:30', '1:30', '3', '4:30', '1:30', '3', '4:30']
+ends = ['5PM', '6:30PM', '5PM', '12NOON', '3PM', '4:30PM', '6PM', '3PM', '4:30PM', '6PM']
 
-content = """
-AAMW-521  HSE/VILLA/PAL HELLEN ROM          1 CU
- 401 SEM W 3:30-6:30PM                 KUTTNER A
-     CROSS LISTED: ARTH-521 CLST-521
-     MAX W/CROSS LIST: 13"""
-
-# findtime = re.compile(r'(\d{1,2}:\d\d)')
-# matches = findtime.findall(content)
-# print matches
-
-# findinstructor = re.compile(r'(\w+ [A-Z]\n)')
-# matches = findinstructor.search(content)
-# print matches.groups()
-
-
-findtimeranges = re.compile(r'(\d{1,2}(:\d\d)?)-((\d{1,2}(:\d\d)?)(([AP]M)|NOON))')
-matches = findtimeranges.search(content)
-print matches.groups()
+# dictionary
+d = {'5:30-7PM': 5, '8:30-5:30PM': 3, '9-1PM': 13, '7:30-10:30PM': 4, '5:30-6PM': 1, '6:30-8:30PM': 25, '9-4:30PM': 2, '7-10PM': 4, '5:30-7:30PM': 16, '7-7PM': 22}

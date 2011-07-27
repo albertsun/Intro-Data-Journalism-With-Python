@@ -1,6 +1,28 @@
-# list
-starts = ['3', '3:30', '2', '10:30', '1:30', '3', '4:30', '1:30', '3', '4:30']
-ends = ['5PM', '6:30PM', '5PM', '12NOON', '3PM', '4:30PM', '6PM', '3PM', '4:30PM', '6PM']
+# here we're going to use regular expressions to extract bits of text
+# regular expressions are a sort of "sub" language that's used within other programming languages to match patterns
+# the syntax looks a little obtuse at first, but they are an extremely powerful and useful tool
+# here's a reference about them http://www.regular-expressions.info/
 
-# dictionary
-d = {'5:30-7PM': 5, '8:30-5:30PM': 3, '9-1PM': 13, '7:30-10:30PM': 4, '5:30-6PM': 1, '6:30-8:30PM': 25, '9-4:30PM': 2, '7-10PM': 4, '5:30-7:30PM': 16, '7-7PM': 22}
+
+# to use regular expressions in Python, we have to import the regular expressions module, named re
+# the import statement pulls in a bundle of functionality that we can access through the variable re
+import re
+
+content = """
+AAMW-521  HSE/VILLA/PAL HELLEN ROM          1 CU
+401 SEM W 3:30-6:30PM                 KUTTNER A
+CROSS LISTED: ARTH-521 CLST-521
+MAX W/CROSS LIST: 13
+"""
+
+findtime = re.compile(r'(\d{1,2}:\d\d)')
+matches = findtime.findall(content)
+print matches
+
+# findinstructor = re.compile(r'(\w+ [A-Z]\n)')
+# matches = findinstructor.search(content)
+# print matches.groups()
+
+# findtimeranges = re.compile(r'(\d{1,2}(:\d\d)?)-((\d{1,2}(:\d\d)?)(([AP]M)|NOON))')
+# matches = findtimeranges.search(content)
+# print matches.groups()

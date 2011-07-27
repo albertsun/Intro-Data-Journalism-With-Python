@@ -4,7 +4,6 @@
 from BeautifulSoup import BeautifulSoup
 import re
 from collections import defaultdict
-from pprint import pprint
 
 
 find_cuny_hours = re.compile(r'(\d{1,2}(:\d\d)?)\s*-\s*((\d{1,2}(:\d\d)?)\s*(([AP]M)|NOON))')
@@ -38,4 +37,4 @@ if __name__ == "__main__":
    for i in range(len(starts)):
        timeslots[starts[i]+"-"+ends[i]] += 1
 
-   pprint(sorted(timeslots.items(), key=lambda x:x[1], reverse=True))
+   print(sorted(timeslots.items(), key=lambda x:x[1], reverse=True)[:10])

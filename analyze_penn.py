@@ -3,7 +3,6 @@
 
 import os, re
 from collections import defaultdict
-from pprint import pprint
 
 findhours = re.compile(r'(\d{1,2}(:\d\d)?)-((\d{1,2}(:\d\d)?)(([AP]M)|NOON))')
 starts = []
@@ -20,18 +19,18 @@ def parsefile(f):
             starts.append(start)
             ends.append(end)
             print start,end
-    print "found %(count)d total class times" % { "count": len(starts) }
 
 # looping over every file in the directory
 for filename in os.listdir("pennregistrar/"):
     f = open("pennregistrar/"+filename, "r")
     parsefile(f)
+    f.close()
 
-print "found %(count)d total class times" % { "count": len(starts) }
+print "found %(count)d total class times" % { "count": len(starts) }    
 
 # dividing up the classes we've found into different timeslots to count them
 timeslots = defaultdict(int)
 for i in range(len(starts)):
     timeslots[starts[i]+"-"+ends[i]] += 1
 
-pprint(sorted(timeslots.items(), key=lambda x:x[1], reverse=True))
+print(sorted(timeslots.items(), key=lambda x:x[1], reverse=True)[:10])
