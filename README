@@ -2,6 +2,9 @@ Code for the "Intro to Python Session" at CMA New York 2011
 
 Walkthrough of enough python to scrape a university regisrar website and find out which timeslots are most popular for classes.
 
+Then we go through another set of course listings and use the Python package BeautifulSoup to parse them.
+Documentation for BeautifulSoup here. http://www.crummy.com/software/BeautifulSoup/documentation.html
+
 To learn more, try these resources
 
 http://python.org/about/gettingstarted/
