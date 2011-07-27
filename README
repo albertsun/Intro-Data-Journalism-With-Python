@@ -42,7 +42,9 @@ You should see a whole bunch of lines of times fly by and at the end two lines w
 
 Now we'll work through the samples up to there.
 
-5. 
+5. Read through each of sample1.py through sample6.py reading the code and comments. Try running each one from the command line to see the output.
+
+$ python sample1.py
 
 --
 
