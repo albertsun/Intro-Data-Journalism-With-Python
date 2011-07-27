@@ -12,19 +12,15 @@ ends = []
 def parsefile(f):
     save = False
     for line in f:
-        if line.find("<pre>") > -1:
-            save = True
-        if (save == True):
-            m = findhours.search(line)
-            if m:
-                x = m.groups()
-                start  =x[0]
-                end = x[2]
-                starts.append(start)
-                ends.append(end)
-                print start,end
-        if line.find("</pre>") > -1:
-            save = False
+        m = findhours.search(line)
+        if m:
+            x = m.groups()
+            start  =x[0]
+            end = x[2]
+            starts.append(start)
+            ends.append(end)
+            print start,end
+    print "found %(count)d total class times" % { "count": len(starts) }
 
 # looping over every file in the directory
 for filename in os.listdir("pennregistrar/"):
