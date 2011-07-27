@@ -1,15 +1,17 @@
-Code for the "Intro to Python Session" at CMA New York 2011
+Intro to Data Journalism With Python
 
 Walkthrough of enough python to scrape a university regisrar website and find out which timeslots are most popular for classes.
 
 Then we go through another set of course listings and use the Python package BeautifulSoup to parse them.
-Documentation for BeautifulSoup here. http://www.crummy.com/software/BeautifulSoup/documentation.html
+Documentation for BeautifulSoup here.
+http://www.crummy.com/software/BeautifulSoup/documentation.html
 
 To learn more, try these resources
 
-http://python.org/about/gettingstarted/
 http://learnpythonthehardway.org/
 http://www.regular-expressions.info/
-http://www.propublica.org/nerds/item/doc-dollars-guides-collecting-the-data
+http://www.crummy.com/software/BeautifulSoup/documentation.html
 
 Penn course data from http://www.upenn.edu/registrar/timetable/ and downloaded using http://www.downthemall.net/
+
+City College course data from http://www1.ccny.cuny.edu/current/registrar/index.cfm

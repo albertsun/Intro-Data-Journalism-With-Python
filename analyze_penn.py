@@ -27,6 +27,8 @@ for filename in os.listdir("pennregistrar/"):
     f = open("pennregistrar/"+filename, "r")
     parsefile(f)
 
+print "found %(count)d total class times" % { "count": len(starts) }
+
 # dividing up the classes we've found into different timeslots to count them
 timeslots = defaultdict(int)
 for i in range(len(starts)):
