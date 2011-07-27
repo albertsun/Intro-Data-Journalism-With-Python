@@ -13,4 +13,8 @@ for line in myfile:
 
 # cleaning up by closing the file we opened
 myfile.close()
-print count
+
+# before we looked at how to print some basic text
+# this is how you print something to screen that has variables and plain text mixed
+# the %(count)d part will be filled in by the value of an integer passed in at the end
+print "counted %(count)d classes" % { "count": count }
