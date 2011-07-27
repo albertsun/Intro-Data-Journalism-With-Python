@@ -12,7 +12,7 @@ The second set of listings (CUNY City College) are formatted as HTML so we use t
 Here's how to follow along
 --------------------------
 
-1.      Make sure you have Python and a text editor installed.
+1.    Make sure you have Python and a text editor installed.
         
       If you're on a Mac, Python comes installed. You'll want to be sure to install a text editor. Something like Textmate, BBEdit, etc. I like TextWrangler (the free, lite version of BBEdit, http://www.barebones.com/products/textwrangler/ )
 
@@ -31,7 +31,7 @@ Here's how to follow along
 
       That's where the data files that we're going to use are located. They're just simple HTML pages downloaded using the Save As option from a web browser. To grab lots of files all at once, there's a Firefox extension called DownThemAll.
 
-4.      Open the file analyze_penn.py in your text editor and look through it, to see what you can understand.
+4.    Open the file analyze_penn.py in your text editor and look through it, to see what you can understand.
 Lines that start with a pound sign (#) are comments and are not executed by the computer.
 
       The files sample1.py to sample5.py build up this, so it'll help to see what you're trying to accomplish.
