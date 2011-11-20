@@ -67,3 +67,12 @@ http://www.crummy.com/software/BeautifulSoup/documentation.html
 Data Sources:
 Penn course data from http://www.upenn.edu/registrar/timetable/ and downloaded using http://www.downthemall.net/
 City College course data from http://www1.ccny.cuny.edu/current/registrar/index.cfm
+
+--
+
+Other learn-to-program type guides
+-----------------------------
+
+http://www.poynter.org/how-tos/digital-strategies/141791/how-journalists-can-use-regular-expressions-to-match-strings-of-text/
+
+http://danwin.com/2011/02/dataist-blog-an-inspiring-case-for-journalists-learning-to-code/
