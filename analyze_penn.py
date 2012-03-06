@@ -8,21 +8,19 @@ findhours = re.compile(r'(\d{1,2}(:\d\d)?)-((\d{1,2}(:\d\d)?)(([AP]M)|NOON))')
 starts = []
 ends = []
 
-def parsefile(f):
-    for line in f:
-        m = findhours.search(line)
-        if m:
-            x = m.groups()
-            start  =x[0]
-            end = x[2]
-            starts.append(start)
-            ends.append(end)
-            print start,end
 
 # looping over every file in the directory
 for filename in os.listdir("pennregistrar/"):
     f = open("pennregistrar/"+filename, "r")
-    parsefile(f)
+    for line in f:
+        m = findhours.search(line)
+        if m:
+            x = m.groups()
+            start = x[0]
+            end = x[2]
+            starts.append(start)
+            ends.append(end)
+            print start,end
     f.close()
 
 print "found %(count)d total class times" % { "count": len(starts) }    
@@ -32,4 +30,5 @@ timeslots = defaultdict(int)
 for i in range(len(starts)):
     timeslots[starts[i]+"-"+ends[i]] += 1
 
+#print timeslots.items()
 print(sorted(timeslots.items(), key=lambda x:x[1], reverse=True)[:10])
