@@ -15,16 +15,7 @@ print d['5:30-7PM']
 
 # the below line will cause an error if you uncomment it, because the dictionary doesn't have a key '6-9PM' in it
 # d['6-9PM'] += 1
+#
+# test if a dictionary has a key
+# d.has_key('6-9PM')
 
-
-# we'll use a default dictionary instead, which has a default value
-# that means we can add 1 to any key in it, even if it doesn't exist yet
-# because the dictionary will take any unknown key and give it the default integer value of 0
-
-# this is a different type of import statement
-from collections import defaultdict
-
-dd = defaultdict(int)
-print dd
-dd['6-9PM'] += 1
-print dd

@@ -1,8 +1,8 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-import os, re
-from collections import defaultdict
+import os
+import re
 
 findhours = re.compile(r'(\d{1,2}(:\d\d)?)-((\d{1,2}(:\d\d)?)(([AP]M)|NOON))')
 starts = []
@@ -26,9 +26,17 @@ for filename in os.listdir("pennregistrar/"):
 print "found %(count)d total class times" % { "count": len(starts) }    
 
 # dividing up the classes we've found into different timeslots to count them
-timeslots = defaultdict(int)
+timeslots = {} #defaultdict(int)
 for i in range(len(starts)):
-    timeslots[starts[i]+"-"+ends[i]] += 1
+	key = starts[i]+"-"+ends[i]
+	if timeslots.has_key(key):
+		timeslots[key] += 1
+	else:
+		timeslots[key] = 1
 
-#print timeslots.items()
-print(sorted(timeslots.items(), key=lambda x:x[1], reverse=True)[:10])
+
+sorted_timeslots = sorted(timeslots.items(), key=lambda x:x[1], reverse=True)
+for time in sorted_timeslots:
+	print time
+
+
