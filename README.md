@@ -16,7 +16,7 @@ Here's how to follow along
         
       If you're on a Mac, Python comes installed. You'll want to be sure to install a text editor. Something like Textmate, BBEdit, etc. I like TextWrangler (the free, lite version of BBEdit, http://www.barebones.com/products/textwrangler/ )
 
-      If you're on Windows, I'm less sure of how to get things running, but you can download it here. Make sure to get a Python 2 version, not Python 3. Link here ( http://www.python.org/getit/releases/2.7.2/ ) A text editor I like there is Notepad++ ( http://notepad-plus-plus.org/ )
+      If you're on Windows, I'm less sure of how to get things running, but you can download it here. Make sure to get a Python 2 version, not Python 3. Link here ( http://www.python.org/download/releases/2.7.5/ ) A text editor I like there is Notepad++ ( http://notepad-plus-plus.org/ )
 
       If you're on Linux, you probably know what to do. If you're not sure (and you're on Ubuntu), try finding your terminal and entering "sudo apt-get install python2.7 gedit"
 
